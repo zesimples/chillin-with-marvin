@@ -1,7 +1,9 @@
-# Chillin with Marvin
+# Chillin' with Marvin
 <img width="250" alt="marvin" src="https://github.com/zesimples/chillin-with-marvin/assets/127743960/54ada0c7-3cad-445c-9a76-c346b4c3cb84">
 
-Our project is an SPA (Single Page Application) that offers a relaxing experience with the iconic AI from 'The Hitchhiker's Guide to the Galaxy.' movie
+Our project is an SPA (Single Page Application) that offers a relaxing experience with the iconic AI from 'The Hitchhiker's Guide to the Galaxy' movie.
+
+This project aims to take a mindful approach to mental health, with the page serving as a "Hope Box," a tool often used in depression treatments.
 
 Feel free to chill with our, once gloomy, but now friendly AI and explore its APIs."
 
