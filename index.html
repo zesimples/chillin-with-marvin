@@ -1,0 +1,158 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>SPA Example</title>
+  <link rel="icon" type="image/png" href="marvin_test2.png">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.10.2/css/all.min.css"/>
+  <link rel="stylesheet" href="styles.css">
+  <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Press+Start+2P&display=swap">
+
+</head>
+
+<body>
+  <div class="intropage" id="introPage">
+    <img src="marvin2.gif" id="introImg">
+    <div id="welcome-text-container">
+      <h1 id="welcome-text">Welcome to Marvin's Hope Box!</h1>
+      <audio id="audio-welcome" controls hidden></audio>
+    </div>
+  </div>
+  <div class="background-animation-secondlayer"></div>
+  <div class="background-animation-firstlayer"></div>
+  <div class="layout">
+  <!-- Navigation bar -->
+  <nav id="navBar">
+    <ul>
+      <li class="navHome" id="titleContainer"><h3><a href="#home" id="homeTitle">Chillin' with Marvin</a></h3></li>
+      <li class="navCenter">
+        <a href="#weatherForecast" class="navButton">Weather Forecast</a>
+        <a href="#jokeTeller" class="navButton">Joke Teller</a>
+        <a href="#musicPlayer" class="navButton">Music Player</a>
+      </li>
+      <li id="aboutButtonContainer">
+        <a href="#about" id="aboutButton" class="fa-sharp fa-solid fa-question fa-beat fa-xl"></a></li>
+    </ul>
+  </nav>
+
+  <div class="mainContainer">
+   
+    <div class="contentContainer">
+      <div id="home" class="content hosme disappear">
+        <!-- Home content will be loaded here -->
+        <h1 id="home-text">Don't Panic!</h1>
+        <h1 id="home-text">Therapy's less grim with a Hope Box.</h1>
+        <h1 id="home-text">Explore mine or dare to make your own.</h1>
+
+        <div class="imageContainer">
+          <img src="/assets/marvin_original.gif" alt="Marvin Posing" id="marvinPosing">
+        </div>
+      </div>
+    
+      <div id="musicPlayer" class="content musicPlayer disappear">
+        <!-- Music player content will be loaded here -->
+        <div class="player-container"> 
+          <!-- Song -->
+          <div class="music-img-container">
+            <img src="https://cdn.discordapp.com/attachments/1144371087753355355/1144984834423402596/img-coconut-mango.jpeg" alt="Album Art" id="album-art">
+          </div>
+          <h2 id="title">Meti-me na Droga</h2>
+          <h3 id="artist">Joseph Maluco</h3>
+          <audio src="https://cdn.discordapp.com/attachments/1143614036454412320/1144982272769015818/coconut-mango.mp3"></audio>
+          <!-- Progress -->
+          <div class="progress-container" id="progress-container">
+            <div class="progress" id="progress"></div>
+            <div class="duration-wrapper">
+              <span id="current-time">0:00</span>
+              <span id="duration">2:06</span>
+            </div>
+          </div>
+          <!-- Controls -->
+          <div class="player-controls">
+            <i class="fas fa-backward" id="prev" title="Previous"></i>
+            <i class="fas fa-play main-button" id="play" title="Play"></i>
+            <i class="fas fa-forward" id="next" title="Next"></i>
+          </div>
+        </div>
+      </div>
+    
+      <div id="jokeTeller" class="content jokeTeller disappear">
+        <!-- Joke teller content will be loaded here -->
+        <button id="jokeButton">Tell Me A Joke, Marvin!</button>
+        <audio id="audio" controls hidden></audio>
+        <div class="joke-text-container">
+            <h1 id="joke-text"></h1>
+        </div> 
+      </div>
+    
+      <div id="weatherForecast" class="content weatherForecast disappear">
+        <!-- Weather forecast content will be loaded here -->
+        
+          <div id="weather-container">
+            <label for="location" id="location-label">Please Enter Location:</label>
+            <input type="text" id="location" placeholder="Mars">
+          </div>
+            <button id="getWeather">Get Athmospheric Vibes!</button>
+            <audio id="audio-weather" controls hidden></audio>
+          
+          <div class="weatherInfo-container">
+            <h1 id="weatherInfo"></h1>
+          </div>
+         
+
+          <!-- <div id="welcome-text-container">
+            <h1 id="welcome-text">Welcome to Marvin's Hope Box!</h1>
+            <audio id="audio-welcome" controls hidden></audio>
+          </div> -->
+        
+      </div>
+      <div id="about" class="content about disappear">
+        <!-- About content will be loaded here -->
+        <p>Marvin, the Paranoid Android who is perpetually depressed and gloomy, is a robot character
+          from Douglas Adams' "The Hitchhiker's Guide to the Galaxy" series.</p>
+        <p>Programmed with a "brain the size of a planet," Marvin is highly intelligent but also deeply
+          dissatisfied. His wry, deadpan humour and his tendency to express existential despair make
+          him a memorable companion in the series' comedic science fiction universe.</p>
+        <p>If even Marvin, a robot with computational capabilities beyond human imagination, can
+          experience depression, how couldn't humans, with all their emotional complexities, also find
+          themselves susceptible to such emotional states?</p>
+        <p>In a galaxy-spanning twist of self-improvement, Marvin, the Paranoid Android, recently
+          enrolled in interstellar mental health therapy. One of his therapeutic challenges was to
+          construct his own "Hope Box," a cosmic repository of uplifting thoughts and mementos
+          designed to elevate his circuits during his frequent bouts of existential despair.</p>
+        <p>Marvin's galactic "Hope Box" is an eclectic yet fitting collection of items tailored to his unique
+          robotic sensibilities:</p>
+        <p>- a joke teller module because Marvin operates under the principle that "a joke a day
+          may keep the therapist many light-years away."
+          - a music player programmed with an array of circuit-warming songs to elevate his
+          mood—or at least to attempt to do so.
+          - a weather forecast display to remind him that existence has its own natural rhythms
+          of highs and lows, and to appreciate the imperfect beauty that the universe, even in
+          its most chaotic forms, has to offer.</p>
+        <p>This project aims to destigmatize depression by highlighting that it's a universal
+          condition that can affect anyone, regardless of background or circumstance. The
+          web app encourages people to seek help for depression by offering easy-to-use tools
+          like a "Hope Box," making mental health care approachable and manageable.</p>
+        <p>This website serves as the culminating group project for theStudio Full Stack
+          Developer course. Given the challenge to build a Single Page Application (SPA)
+          inspired by a famous AI, it was collaboratively brought to life by the authors 
+        </p>Vera Costa, José Penacho, Kévin Mateus and Vasco Villas.</p>
+      </div>
+    </div>
+  </div>
+
+  <!-- Footer -->
+  <footer>
+    <!-- &copy; 2023 Chillin' with Marvin SPA. All rights reserved. -->
+    <p id="footerQuotes">“The best conversation I had was over forty million years ago…. And that was with a coffee machine.”</p>
+  </footer>
+  </div>
+  <script src="https://kit.fontawesome.com/65addcf641.js" crossorigin="anonymous"></script>
+  <script src="script.js"></script>
+  <script src="music_script.js"></script>
+  <script src="joke_script.js"></script>
+  <script src="weather_script.js"></script>
+  <script src="footer_quotes.js"></script>
+</body>
+</html>

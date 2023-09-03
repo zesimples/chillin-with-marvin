@@ -1,0 +1,681 @@
+/* Reset default margin and padding for the whole page */
+@import url('https://fonts.googleapis.com/css2?family=League+Spartan:wght@400;700&display=swap');
+
+body, html {
+  margin: 0;
+  padding: 0;
+  background-size: cover;
+  background-position: center;
+  background-attachment: fixed;
+  height: 100%;
+  font-family: 'League Spartan', sans-serif;
+}
+
+a {
+  font-family: 'Courier New', Courier, monospace;
+  color: rgb(109, 169, 109);
+  text-decoration: none;
+}
+
+  
+/* Create a flex container for the whole page */
+body {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: space-between;
+}
+
+/* Background animation */
+.background-animation-secondlayer {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  animation: backfirstGradientTransition 5s infinite linear;
+  z-index: -1; /* Layer behind the content */
+}
+
+.background-animation-firstlayer {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  animation: backsecondGradientTransition 10s infinite linear;
+  z-index: -2; /* Layer behind the content */
+}
+
+
+.intropage {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background-color: #f2f3f287;
+  animation: introFrame 6s forwards;
+  z-index: 10;
+  display: flex;
+  justify-content: center; 
+  align-items: center;
+}
+
+#introImg {
+  width: 60%;
+  height: 60%;
+  border-radius: 25px;
+  box-shadow: 2px 2px 20px 10px rgba(0,0,0,0.5);
+  
+}
+
+#welcome-text-container {
+  position: absolute;
+  top: 50%; 
+  left: 50%;
+  transform: translate(-50%, -50%); 
+  max-width: 80%;
+  text-align: center; 
+  max-width: 500px;
+  background: #e7e7e7;
+  /* border: 1px solid black; */
+  border-radius: 20px;
+  padding: 25px;
+  box-shadow: 0 15px 30px 5px rgba(0, 0, 0, 0.3);
+}
+
+#welcome-text {
+  font-family: 'Courier New', Courier, monospace;
+  color: rgb(7, 0, 0); 
+  font-size: 20px;
+
+}
+
+@keyframes introFrame {
+  0% {
+  opacity: 1;
+}
+80% {
+  opacity: 1;
+}
+100% {
+  opacity: 0;
+  
+}
+}
+
+
+@keyframes backsecondGradientTransition {
+  0% {
+    background: linear-gradient(to bottom right, transparent, rgb(176, 235, 176));
+    opacity: 0.8;
+  }
+  50% {
+    background: linear-gradient(to bottom right, transparent, rgb(176, 235, 176));
+    opacity: 0.3;
+  }
+  100% {
+    background: linear-gradient(to bottom right, transparent, rgb(176, 235, 176));
+    opacity: 0.8;
+  }
+}
+
+@keyframes backfirstGradientTransition {
+  0% {
+    background: linear-gradient(to bottom right, transparent, rgb(121, 154, 93));
+    opacity: 0.8;
+  }
+  50% {
+    background: linear-gradient(to bottom right, transparent, rgb(121, 154, 93));
+    opacity: 0.3;
+  }
+  100% {
+    background: linear-gradient(to bottom right, transparent, rgb(121, 154, 93));
+    opacity: 0.8;
+  }
+}
+
+#home-text {
+  font-family: 'Courier New', Courier, monospace;
+  font-size: 25px;
+  padding-top: -5px;
+  margin: 10px;
+  opacity: 0.9;
+}
+
+#navBar {
+  padding-top: 20px;
+}
+
+#navBar ul {
+  list-style: none;
+  display: flex; 
+  justify-content: space-between;
+  align-items: center;
+  padding-right: 40px;
+  margin: 0;
+}
+
+
+li {
+  margin-left: 20px;
+  margin-right: 40px;
+} 
+
+.navCenter {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background: rgb(252 250 246);
+  border-radius: 50px;
+  width: 100%;
+  max-width: 600px;
+  transition: 0.2s ease-in-out;
+}
+
+.navCenter:hover {
+  box-shadow: 0px 16px 32px 0px rgba(0,0,0,0.1);
+  transition: 0.2s ease-in-out;
+}
+
+.navHome {
+  text-align: center;
+  text-decoration: none;
+}
+
+.navButton {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  text-decoration: none;
+  text-align: center;
+  padding: 10px;
+  border-radius: 50px;
+  margin: 15px;
+  border: none;
+  outline: none;
+  color: black;
+  cursor: pointer;
+  position: relative; 
+  z-index: 0;
+  transition: box-shadow 1s ease-in-out; 
+  cursor: pointer;
+  outline: none;
+  width: 33.3%;
+  height: 45px;
+  font-family: 'Courier New', Courier, monospace;
+  font-size: 18px;
+  transition: 0.2s ease-in-out;
+}
+
+.navButton.select {
+  background: rgb(138, 220, 138);
+  transition: 0.2s ease-in-out;
+}
+
+.navButton.select:hover {
+  background: rgb(143, 215, 143);
+}
+
+.navButton:hover {
+  background: rgba(0,0,0,0.2);
+  transition: 0.2s ease-in-out;
+}
+
+#aboutButtonContainer, #titleContainer {
+  min-width: 200px;
+  display: flex;
+}
+
+#aboutButtonContainer {
+  justify-content: flex-end;
+}
+
+#aboutButton {
+  padding-bottom: 5px;
+}
+
+#titleContainer {
+  justify-content: flex-start;
+}
+
+.layout {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  align-items: stretch;
+  min-height: 100vh;
+}
+
+
+.contentContainer {
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  align-items: center;
+  padding: 20px 0px;
+  width:100vw;
+  overflow-x: hidden;
+}
+
+.content {
+  opacity: 1;
+  padding: 20px;
+  flex: 1;
+  text-align: center; 
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+
+@keyframes fadeInFromLeft {
+  from {
+    transform:translateX(-50vw);
+    opacity: 0;
+    display:none;
+  }
+  to {
+    opacity: 1;
+    display: block;
+    display: flex;
+    flex-direction: column;
+  }
+}
+
+@keyframes fadeOutToRight {
+  from {
+    opacity: 1;
+    display:block;
+    display: flex;
+    flex-direction: column;
+  }
+  to {
+    transform:translateX(50vw);
+    opacity: 0;
+  }
+}
+
+.show {
+  display:block;
+  display: flex;
+  flex-direction: column;
+}
+
+.disappear {
+   display:none; 
+}
+
+/* Apply fadeInFromLeft animation when showing */
+.content.show {
+  animation: fadeInFromLeft 1s forwards;
+}
+
+/* Apply fadeOutToRight animation when hiding */
+.content.hide {
+  animation: fadeOutToRight 0.5s forwards;
+}
+
+
+
+/* Styling for the footer */
+footer {
+    background-color: transparent;
+    color: rgb(27, 27, 23);
+    text-align: center;
+    padding: 10px;
+}
+
+#marvinPosing {
+    height: 50vh;
+    width:auto;
+} 
+
+/*::::::::::::::::::::::::::::::::::::::::::::::*/
+/* ::::::::STYLING FOR WEATHER FORECAST!!! :::::::::*/
+
+#weather-container {
+  padding-bottom: 30px;
+}
+
+#location-label {
+  font-family: 'Courier New', Courier, monospace;
+  font-style: bold;
+}
+
+#weatherInfo {
+  max-width: 500px;
+  background: #e7e7e7;
+  border-radius: 20px;
+  padding: 25px;
+  margin-top: 20px;
+  box-shadow: 0 15px 30px 5px rgba(0, 0, 0, 0.3);
+  font-family: 'Courier New', Courier, monospace;
+  color: #010506;
+  font-size: 20px;
+}
+
+
+#getWeather {
+  cursor: pointer;
+  outline: none;
+  width: 250px;
+  height: 35px;
+  font-family: 'Courier New', Courier, monospace;
+  font-size: 15px;
+  color:#e9edee;
+  background: #59c84f;
+  border: none;
+  border-radius: 5px;
+  box-shadow: 2px 2px 20px 10px rgba(0,0,0,0.2);
+  transform: scale(1.40);
+
+
+}
+
+#getWeather:hover {
+  filter: brightness(90%);
+
+}
+
+#getWeather:active {
+  transform: scale(1);
+}
+
+#getWeather:disabled {
+  cursor: default;
+  filter: brightness(30%);
+}
+
+#location {
+  width: 30%;
+  text-align: center;
+  border-radius: 8px;
+  box-shadow: 2px 2px 10px 5px rgba(0,0,0,0.0.1);
+}
+
+#location::placeholder {
+  text-align: center;
+}
+
+/*::::::::::::::::::::::::::::::::::::::::::::::*/
+/* ::::::::STYLING FOR JOKE TELLER!!! :::::::::*/
+
+
+#jokeButton {
+  cursor: pointer;
+  outline: none;
+  width: 200px;
+  height: 50px;
+  font-family: 'Courier New', Courier, monospace;
+  font-size: 18px;
+  color:#e9edee;
+  background: #4caf43;
+  border: none;
+  border-radius: 5px;
+  box-shadow: 2px 2px 20px 10px rgba(0,0,0,0.2);
+  transform: scale(1.20);
+
+}
+
+
+#jokeButton:hover {
+  filter: brightness(90%);
+
+}
+
+#jokeButton:active {
+  transform: scale(1.05);
+}
+
+#jokeButton:disabled {
+  cursor: default;
+  filter: brightness(30%);
+}
+
+.joke-text-container {
+  max-width: 500px;
+  background: #e7e7e7;
+  border-radius: 20px;
+  padding: 20px;
+  margin-top: 20px;
+  box-shadow: 0 15px 30px 5px rgba(0, 0, 0, 0.3);
+}
+
+#joke-text {
+  font-family: 'Courier New', Courier, monospace;
+  color: #010506;
+  font-size: 20px;
+}
+
+/*::::::::::::::::::::::::::::::::::::::::::::::*/
+/* ::::::::STYLING FOR MUSIC PLAYER!!! :::::::::*/
+
+
+#musicPlayer .player-container {
+  height: 500px;
+  width: 400px;
+  background: #e7e7e7;
+  border-radius: 20px;
+  box-shadow: 0 15px 30px 5px rgba(0, 0, 0, 0.3);
+  transform: scale(0.85);
+}
+
+#musicPlayer .music-img-container {
+  height: 300px;
+  width: 300px;
+  position: relative;
+  top: -50px;
+  left: 50px;
+}
+
+#musicPlayer .music-img-container img {
+  height: 100%;
+  width: 100%;
+  object-fit: cover;
+  border-radius: 20px;
+  box-shadow: 0 15px 30px 5px rgba(0, 0, 0, 0.5);
+}
+
+#musicPlayer h2 {
+  font-size: 25px;
+  text-align: center;
+  margin: 0;
+}
+
+#musicPlayer h3 {
+  font-size: 20px;
+  text-align: center;
+  font-weight: 400;
+  margin: 5px 0 0;
+}
+
+/* Progress */
+#musicPlayer .progress-container {
+  background: #fff;
+  border-radius: 5px;
+  cursor: pointer;
+  margin: 40px 20px;
+  height: 4px;
+  width: 90%;
+}
+
+#musicPlayer .progress {
+  background: #242323;
+  border-radius: 5px;
+  height: 100%;
+  /* change this to show progress */
+  width: 66%;
+  transition: width 0.1s linear;
+}
+
+#musicPlayer .duration-wrapper {
+  position: relative;
+  top: -25px;
+  display: flex;
+  justify-content: space-between;
+}
+
+/* Controls */
+#musicPlayer .player-controls {
+  position: relative;
+  top: -15px;
+  left: 120px;
+  width: 200px;
+}
+
+#musicPlayer .fas {
+  font-size: 30px;
+  color: rgb(129, 129, 129);
+  margin-right: 30px;
+  cursor: pointer;
+  user-select: none;
+
+}
+
+#musicPlayer .fas:hover {
+  filter: brightness(80%);
+}
+
+
+#musicPlayer .main-button {
+  font-size: 40px;
+  position: relative;
+  top: 3px;
+}
+
+/* ::::::::ABOUT STYLING!! :::::::::*/
+
+.about {
+  position: fixed;
+  top: 50%; 
+  left: 50%;
+  transform: translate(-50%, -50%); 
+  width: 90%;
+  text-align: center; 
+  max-width: 1000px;
+  background: #e7e7e7;
+  background-color: #161616;
+  color: green;
+  border-radius: 20px;
+  padding: 25px;
+  font-family: 'Press Start 2P', monospace;
+  font-stretch: condensed;
+  font-size: 10px;
+  line-height: 1.5;
+  box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.5);
+}
+
+
+/* Media Query: Tablet or Smaller */
+
+@media screen and (max-width: 1024px) {
+
+  #navBar ul {
+      flex-direction: column;
+      padding: 0;
+      margin-top: 20px;
+  }
+
+  li {
+      margin-bottom: 10px;
+      margin-left: 30px;
+  }
+
+  #aboutButton {
+    position: fixed; 
+    top: 30px;       
+    right: 15px;     
+    z-index: 10;     
+  }
+
+  .navCenter {
+      width: 90%;
+      margin: 10px 0;
+  }
+
+  .contentContainer {
+      flex-direction: column;
+  }
+
+  #musicPlayer .player-container {
+      width: 80vw;
+  }
+
+  #musicPlayer .music-img-container {
+      left: 10vw;
+  }
+
+}
+
+/* Media Query: Medium Tablets and Mobile Landscape */
+
+@media screen and (max-width: 768px) {
+
+  body {
+      font-size: 14px;  /* Adjust base font-size */
+  }
+
+  .navButton {
+      width: 100%;
+      margin: 5px 0;
+  }
+
+  #musicPlayer .player-container {
+      width: 70vw;
+  }
+
+  #musicPlayer .music-img-container {
+      left: 15vw;
+  }
+
+  #musicPlayer .player-controls {
+    left: 25vw;
+}
+
+#aboutButton {
+  position: fixed;
+  top: 35px;
+  right: 45px;
+  z-index: 10;
+}
+
+}
+
+/* Media Query: Small Mobile Screens */
+
+@media screen and (max-width: 480px) {
+
+  body {
+      font-size: 12px;  /* Adjust base font-size */
+  }
+
+  #musicPlayer .player-controls {
+    left: 27vw;
+  }
+
+  #musicPlayer .player-container {
+    width: 95vw;
+  }
+
+  #musicPlayer .music-img-container {
+    left: 10vw;
+    transform: scale(0.8);
+  }
+
+
+  @media screen and (max-width: 376px) {
+    #aboutButton {
+      position: fixed;
+      top: 20px;
+      right: 15px;
+      z-index: 10;
+    }
+  }
+  
+}
+
+
+
+
