@@ -654,13 +654,6 @@ footer {
     z-index: 10;
 }
 
-/* testes (part 2) */
-  #about {
-    width: 100%;
-    margin: 5px 0;
- }
-
-
 }
 
 /* Media Query: Small Mobile Screens */
@@ -714,14 +707,14 @@ footer {
 
 }
 
-  @media screen and (max-width: 376px) {
-    #aboutButton {
+@media screen and (max-width: 376px) {
+  #aboutButton {
       position: fixed;
       top: 20px;
       right: 15px;
       z-index: 10;
-    }
   }
+}
   
 
 
