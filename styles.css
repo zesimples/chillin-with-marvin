@@ -545,7 +545,7 @@ footer {
   top: 3px;
 }
 
-/* ::::::::ABOUT STYLING!! :::::::::*/
+/* ::::::::ABOUT STYLING! :::::::::*/
 
 .about {
   position: fixed;
@@ -605,6 +605,19 @@ footer {
 
   #musicPlayer .music-img-container {
       left: 10vw;
+  }
+
+  /* teste */
+  .about {
+    margin-bottom: 10px;
+    margin-left: 30px;
+    max-height: 200px; /* Adjust the maximum height as needed */
+    overflow-y: scroll; /* Enable vertical scrolling */   
+    bottom: 20px;
+    font-size: 8px;
+    padding-top: 50%;
+    width: 80vw;
+    height: 90vw;
   }
 
 }
@@ -685,6 +698,13 @@ footer {
   #location {
     width: 80%;
 }
+
+ /* testes (part 3)*/ 
+  #about {
+    width: 50%;
+    margin: 3px 0;
+ }
+
 }
 
 @media screen and (max-width: 376px) {
