@@ -93,15 +93,15 @@ const weatherModule = (function() {
         function getMarvinSayings(weatherCondition) {
           switch(weatherCondition) {
             case 'Clear':
-              return "Oh great, another sunny day to remind you of the unattainable joy in your life.";
+              return "What a glorious day! The sun is shining, and so should you!";
             case 'Rain':
-              return "Ah, rain. As if the sky is weeping for the futility of existence.";
+              return "Rain is just confetti from the sky! A perfect time to dance in the puddles.";
             case 'Snow':
-              return "Snow, the cold, white blanket of despair.";
+              return "Snowfall turns the world into a winter wonderland! Time for some snow angels.";
             case 'Clouds':
-              return "Cloudy skies, like the murky future that awaits us all.";
+              return "Cloudy skies give us a moment to pause and reflect. Plus, they make for excellent daydreaming!";
             default:
-              return "Weather is pointless, much like everything else.";
+              return "Every type of weather brings its own kind of magic!";
           }
         }
 
