@@ -1,7 +1,7 @@
 # Chillin with Marvin
 <img width="250" alt="marvin" src="https://github.com/zesimples/chillin-with-marvin/assets/127743960/54ada0c7-3cad-445c-9a76-c346b4c3cb84">
 
-"Our project is an SPA (Single Page Application) that offers a relaxing experience with the iconic AI from 'The Hitchhiker's Guide to the Galaxy.' 
+Our project is an SPA (Single Page Application) that offers a relaxing experience with the iconic AI from 'The Hitchhiker's Guide to the Galaxy.' movie
 
 Feel free to chill with our, once gloomy, but now friendly AI and explore its APIs."
 
