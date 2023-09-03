@@ -10,6 +10,15 @@ Feel free to chill with our, once gloomy, but now friendly AI and explore its AP
 # Languages and technologies
 HTML, CSS, JavaScript, REST API and Photoshop.
 
+# Project Management and Collaboration tools
+Trello: Used for task management and project coordination.
+
+Discord: Inputs and Meetings
+
+GitHub: Deployment and file sharing  
+
+Whatsapp: Doubts, thoughts, hints
+
 # Links to the APIs
 "Text to Speech" API: https://www.voicerss.org/api/
 
