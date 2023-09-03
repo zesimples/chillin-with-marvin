@@ -21,10 +21,10 @@ const musicModule = (function() {
 
         const songs = [
             {
-                link: 'https://cdn.discordapp.com/attachments/1143614036454412320/1144982272769015818/coconut-mango.mp3',
-                displayName: 'Coconut Mango',
-                artist: 'Arrangement',
-                imgLink: 'https://cdn.discordapp.com/attachments/1144371087753355355/1144984834423402596/img-coconut-mango.jpeg',
+                link: 'https://cdn.discordapp.com/attachments/1144371087753355355/1147889037579919380/digital-love.mp3',
+                displayName: 'Digital Love',
+                artist: 'Daft Punk',
+                imgLink: 'https://media.discordapp.net/attachments/1144371087753355355/1147888993732677752/img-digital-love.jpeg',
 
             },
             {
@@ -38,6 +38,12 @@ const musicModule = (function() {
                 displayName: 'Computer Love',
                 artist: 'Kraftwerk',
                 imgLink: 'https://cdn.discordapp.com/attachments/1144371087753355355/1144990595627110430/img-computer-love.jpg',
+            },
+            {
+                link: 'https://cdn.discordapp.com/attachments/1144371087753355355/1147890211456552960/computer-blue.mp3',
+                displayName: 'Computer Blue',
+                artist: 'Prince',
+                imgLink: 'https://media.discordapp.net/attachments/1144371087753355355/1147890929018093618/img-computer-blue2.jpg',
             }
         ];
 
