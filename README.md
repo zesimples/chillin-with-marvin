@@ -13,7 +13,7 @@ Joke Teller: https://sv443.net/jokeapi/v2/
 
 Weather Forecast: https://api.openweathermap.org/
 
-Music Player: Initially the idea was to use Spotify's API, but to be able to request the music we needed, there was the need to create a server to upload the music files  
+Music Player: Initially the idea was to use Spotify's API, but to be able to request the music we needed, there was the need to create a server to upload the music files. (all licenses purchased)  
 
 # List of contributors
 
