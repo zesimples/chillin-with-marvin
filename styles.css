@@ -545,7 +545,7 @@ footer {
   top: 3px;
 }
 
-/* ::::::::ABOUT STYLING!! :::::::::*/
+/* ::::::::ABOUT STYLING! :::::::::*/
 
 .about {
   position: fixed;
@@ -607,6 +607,19 @@ footer {
       left: 10vw;
   }
 
+  /* teste */
+  .about {
+    margin-bottom: 10px;
+    margin-left: 30px;
+    max-height: 200px; /* Adjust the maximum height as needed */
+    overflow-y: scroll; /* Enable vertical scrolling */   
+    bottom: 20px;
+    font-size: 8px;
+    padding-top: 50%;
+    width: 80vw;
+    height: 90vw;
+  }
+
 }
 
 /* Media Query: Medium Tablets and Mobile Landscape */
@@ -641,6 +654,11 @@ footer {
     z-index: 10;
 }
 
+/* testes */
+  #about {
+    width: 100%;
+    margin: 5px 0;
+ }
 
 
 }
@@ -687,6 +705,13 @@ footer {
   #location {
     width: 80%;
 }
+
+ /* testes */ 
+  #about {
+    width: 50%;
+    margin: 3px 0;
+ }
+
 }
 
   @media screen and (max-width: 376px) {
