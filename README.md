@@ -32,7 +32,7 @@ Favicon, Typewriter effect, Footer Quotes and effects, Git helper
 
 # Link to the deployed web page
 
-[Chillin with Marvin](https://zesimples.github.io/home)
+[Chillin with Marvin](https://zesimples.github.io/chillin-with-marvin)
 
 
 
