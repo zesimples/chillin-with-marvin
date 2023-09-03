@@ -9,6 +9,8 @@ Feel free to chill with our, once gloomy, but now friendly AI and explore its AP
 HTML, CSS, JavaScript, REST API and Photoshop
 
 # Links to the APIs
+"Text to Speech" API: https://www.voicerss.org/api/
+
 Joke Teller: https://sv443.net/jokeapi/v2/
 
 Weather Forecast: https://api.openweathermap.org/
