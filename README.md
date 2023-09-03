@@ -5,10 +5,10 @@ Our project is an SPA (Single Page Application) that offers a relaxing experienc
 
 This project aims to take a mindful approach to mental health, with the page serving as a "Hope Box," a tool often used in depression treatments.
 
-Feel free to chill with our, once gloomy, but now friendly AI and explore its APIs."
+Feel free to chill with our, once gloomy, but now friendly AI and explore its APIs.
 
 # Languages and technologies
-HTML, CSS, JavaScript, REST API and Photoshop
+HTML, CSS, JavaScript, REST API and Photoshop.
 
 # Links to the APIs
 "Text to Speech" API: https://www.voicerss.org/api/
@@ -17,7 +17,7 @@ Joke Teller: https://sv443.net/jokeapi/v2/
 
 Weather Forecast: https://api.openweathermap.org/
 
-Music Player: Initially the idea was to use Spotify's API, but to be able to request the music we needed, there was the need to create a server to upload the music files. (all licenses purchased)  
+Music Player: Initially the idea was to use Spotify's API, but to be able to request the music we needed, there was the need to create a server to upload the music files (all licenses purchased).  
 
 # List of contributors
 
