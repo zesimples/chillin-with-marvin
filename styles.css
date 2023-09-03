@@ -636,6 +636,9 @@ footer {
     padding: 20px;
   }
 
+  #aboutButton {
+    position: absolute;
+  }
   .navCenter {
     padding: 10px;
   }
@@ -660,10 +663,6 @@ footer {
 
   #musicPlayer .player-controls {
     left: 25vw;
-  }
-
-  #aboutButtonContainer {
-
   }
 
   #about {
@@ -755,16 +754,24 @@ footer {
  }
 }
 
-@media screen and (max-width: 376px) {
+@media screen and (max-width: 375px) {
   #aboutButton {
       position: fixed;
       top: 20px;
       right: 15px;
       z-index: 10;
   }
+
+  #about {
+    position: absolute;
+    padding-bottom: 2%;
+    width: 80%;
+    margin: 55% 0;
+    padding-top: 115%; 
+ }
+
+  #musicPlayer .music-img-container {
+    left: 9vw;
+  }
 }
-  
-
-
-
 
