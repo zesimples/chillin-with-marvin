@@ -11,7 +11,7 @@ HTML, CSS, JavaScript, REST API and Photoshop
 # Links to the APIs
 Joke Teller: https://sv443.net/jokeapi/v2/
 
-Weather Forecast: https://api.openweathermap.org/data/2.5/weather?q=${location}&appid=${YOUR_API_KEY}
+Weather Forecast: https://api.openweathermap.org/data/2.5/weather
 
 Music Player: Initially the idea was to use Spotify's API, but to be able to request the music we needed, there was the need to create a server to upload the music files  
 
