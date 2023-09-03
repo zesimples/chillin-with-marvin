@@ -634,12 +634,14 @@ footer {
     left: 25vw;
 }
 
-#aboutButton {
-  position: fixed;
-  top: 35px;
-  right: 45px;
-  z-index: 10;
+  #aboutButton {
+    position: fixed;
+    top: 35px;
+    right: 45px;
+    z-index: 10;
 }
+
+
 
 }
 
@@ -664,6 +666,28 @@ footer {
     transform: scale(0.8);
   }
 
+  #introImg {
+    width: 90%;
+    height: 90%;
+}
+
+  #welcome-text {
+    font-size: 16px;
+}
+
+  #home-text {
+    font-size: 20px;
+}
+
+  .navButton {
+    width: 90%;
+    margin: 10px 0;
+}
+
+  #location {
+    width: 80%;
+}
+}
 
   @media screen and (max-width: 376px) {
     #aboutButton {
@@ -674,7 +698,6 @@ footer {
     }
   }
   
-}
 
 
 
